@@ -1,0 +1,14 @@
+{
+  "test_total": 360,
+  "train_total": 393,
+  "validation_total": 47,
+  "test_hard": 114,
+  "train_hard": 121,
+  "test_notes": 163,
+  "test_pt": 231,
+  "test_not_read_links": 21,
+  "test_links": 197,
+  "max_test_train_similarity": 0.4983,
+  "test_two_label": 48,
+  "test_uncollected": 48
+}

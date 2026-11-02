@@ -1,0 +1,501 @@
+id,state_text,labels,rationale,ok,fixed_labels,note
+test-0293,"Type: link
+User title: The evidence on exercise for mood and cognition, applied
+User description: (empty)
+URL: https://strongerbyscience.com/the-evidence-on-exercise-for-mood-synthetic-0173
+Site: Stronger by Science
+Preview title: Exercise and the brain: what the research says, and my routine
+Preview description: Evidence review of exercise for cognition plus a practical weekly routine.
+Content status: read
+Content:
+An evidence review of exercise effects on mood and cognition. The piece then translates the findings into a weekly routine. Dose-response findings are presented with their caveats. The routine respects the minimum effective doses discussed. Mechanisms like BDNF are covered at review depth. Personal adherence notes close the piece. Science review plus practical health routine. The full version of the material keeps the same topics at greater depth, with examples solved step by step in every section. The full version of the material keeps the same topics at greater depth, with examples solved step by step in every section.",wellbeing;cognitive_psychology,Cabe nas duas: ciência revisada (includes de cognitive_psychology) e rotina de saúde (includes de wellbeing).,,,
+test-0208,"Type: link
+User title: WebSockets vs SSE: a technical decision guide
+User description: (empty)
+URL: https://smashingmagazine.com/websockets-vs-sse-a-technical-decision-synthetic-0117
+Site: Smashing Magazine
+Preview title: Choosing between WebSockets and server-sent events
+Preview description: Technical comparison of WebSockets and SSE with benchmarks and code.
+Content status: not_read
+Content:
+(empty)",dev_engineering,Decisão técnica com código e benchmark: includes de dev_engineering; leitura sem técnica seria web.,,,
+train-0381,"Type: note
+User title: Portfolio template with layout notes
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Layout notes inside the file explain grid and type decisions. Sections cover project page, case study and about. Variants let each project switch between media layouts. The notes teach composition while you fill it in. Tokens are pre-wired for light and dark modes. Ready-made template and teaching notes combined.",templates;design_ui,Cabe nas duas: template pronto (includes de templates) e notas de método de layout (includes de design_ui).,,,
+train-0344,"Type: note
+User title: Checkout screenshots classified by pattern
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+A saved collection of checkout screenshots classified by pattern family. Visual curation favors high-craft screens worth revisiting. Each entry is tagged with the pattern it instantiates. One-step, accordion and progressive checkout families covered. Notes record the rule each screen follows.",ui_inspiration;app_patterns,Cabe nas duas: coleção visual (includes de ui_inspiration) e classificação de padrões (includes de app_patterns).,,,
+train-0343,"Type: link
+User title: Checkout flows, saved and classified
+User description: (empty)
+URL: https://mobbin.com/checkout-flows-saved-and-classified-synthetic-0184
+Site: Mobbin
+Preview title: Checkout screenshots classified by pattern
+Preview description: Checkout screenshot collection classified by pattern family.
+Content status: read
+Content:
+A saved collection of checkout screenshots classified by pattern family. Visual curation favors high-craft screens worth revisiting. Each entry is tagged with the pattern it instantiates. One-step, accordion and progressive checkout families covered. Notes record the rule each screen follows. The collection doubles as reference and lookup. Visual swipe file with pattern classification. The ending suggests a twenty-minute exercise that consolidates the main content without any tool beyond the basics. For readers coming back later, each section's highlights are gathered into a single quick-reference board at the end.",ui_inspiration;app_patterns,Cabe nas duas: coleção visual (includes de ui_inspiration) e classificação de padrões (includes de app_patterns).,,,
+train-0300,"Type: note
+User title: Idea: a tiny CRM for solo tutors
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Core loop: lesson log, payment status and next-session nudge. Open question whether scheduling should be built or embedded. No analysis of how existing CRMs implement their loops. Pricing thought is flat, per active student, no tiers. Validation sketch runs on a spreadsheet with five tutors. Explicitly labeled a napkin-stage idea.",app_ideas,Ideia em estágio de guardanapo: includes de app_ideas; análise de CRMs existentes seria app_patterns.,,,
+train-0384,"Type: link
+User title: Landing blocks with docs: copy and learn
+User description: (empty)
+URL: https://ui.shadcn.com/landing-blocks-with-docs-copy-and-synthetic-0207
+Site: shadcn/ui
+Preview title: Landing page blocks with built-in documentation
+Preview description: Landing blocks with inline layout documentation.
+Content status: not_read
+Content:
+(empty)",templates;design_ui,Cabe nas duas: blocos para copiar (includes de templates) e documentação de composição (includes de design_ui).,,,
+train-0373,"Type: link
+User title: Postmortem of a web-wide outage, with the stack explained
+User description: (empty)
+URL: https://blog.cloudflare.com/postmortem-of-a-web-wide-outage-synthetic-0201
+Site: Cloudflare Blog
+Preview title: The observability story of a web-wide outage
+Preview description: Postmortem of a web-wide outage with engineering and impact halves.
+Content status: read
+Content:
+A postmortem of a web-wide outage told at engineering depth. The stack narrative covers routing, retry storms and failover. Configuration snippets show the fix line by line. The web half maps which categories of sites broke. Timelines interleave vendor status and internal signals. Action items list protocol-level hardening. Engineering postmortem plus web impact analysis. The ending suggests a twenty-minute exercise that consolidates the main content without any tool beyond the basics. The ending suggests a twenty-minute exercise that consolidates the main content without any tool beyond the basics.",dev_engineering;web,Cabe nas duas: postmortem técnico (includes de dev_engineering) e impacto na web (includes de web).,,,
+test-0291,"Type: note
+User title: Ciência do sono aplicada: minha rotina e os estudos por trás
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Relato de rotina de sono montada a partir da pesquisa sobre sono e consolidação. A parte prática traz checklist de higiene do sono em quatro semanas. A parte de ciência revisa estudos de consolidação da memória durante o sono. Cada hábito da rotina cita o achado que o justifica. Limitações dos estudos em laboratório são apontadas. Medições pessoais de sono acompanham o texto.",wellbeing;cognitive_psychology,Cabe nas duas: hábito de saúde prática (includes de wellbeing) e pesquisa revisada (includes de cognitive_psychology).,,,
+test-0295,"Type: link
+User title: Plano de estudo para virar tech lead: carreira e método
+User description: (empty)
+URL: https://medium.com/plano-de-estudo-para-virar-tech-synthetic-0174
+Site: Medium
+Preview title: Do senior à lead: o plano de estudo e as habilidades de carreira
+Preview description: Plano de estudo de seis meses para transição de carreira a tech lead.
+Content status: read
+Content:
+Plano de seis meses de estudo para a transição de senior para tech lead. A parte de método cobre como estudar: blocos, espaçamento e projeto. A parte de carreira mapea as expectativas do novo papel. Cada trimestre liga uma habilidade de carreira a um objetivo de estudo. Métrica de progresso combina horas e entregas no trabalho. Mentoria e feedback estruturam o plano. É plano de carreira E método de estudo juntos. No desfecho, há uma seção de erros comuns que vale reler, com a correção recomendada para cada situação descrita.",career_work;learning_study,Cabe nas duas: transição de carreira (includes de career_work) e método de estudo estruturado (includes de learning_study).,,,
+test-0297,"Type: note
+User title: Plano de estudo para virar tech lead: carreira e método
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+A parte de carreira mapea as expectativas do novo papel. Cada trimestre liga uma habilidade de carreira a um objetivo de estudo. Métrica de progresso combina horas e entregas no trabalho. Mentoria e feedback estruturam o plano. É plano de carreira E método de estudo juntos.",career_work;learning_study,Cabe nas duas: transição de carreira (includes de career_work) e método de estudo estruturado (includes de learning_study).,,,
+test-0210,"Type: note
+User title: WebSockets vs SSE: a technical decision guide
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Protocol mechanics, reconnection semantics and proxy behavior are compared. Benchmarks measure reconnect storm behavior under flaky networks. Code shows a fallback chain from SSE to long polling. Scaling section covers connection limits per node and sticky routing. Decision tree at the end reflects workload, not fashion. Written for engineers implementing the feature.",dev_engineering,Decisão técnica com código e benchmark: includes de dev_engineering; leitura sem técnica seria web.,,,
+test-0205,"Type: link
+User title: HTTP/3 na prática: o que muda no servidor e no cliente
+User description: (empty)
+URL: https://blog.cloudflare.com/http-3-na-pr-tica-o-synthetic-0115
+Site: Cloudflare Blog
+Preview title: Implantando HTTP/3: guia técnico
+Preview description: Guia técnico de implantação de HTTP/3 com benchmarks e configuração.
+Content status: read
+Content:
+Guia técnico de implantação de HTTP/3 em servidor próprio com certificate pinning. Explica handshake 0-RTT, controle de congestionamento e migração de conexão. Benchmarks comparam latência e taxa de reconexão contra HTTP/2. Configuração completa do servidor é mostrada com diretivas comentadas. Armadihas de middleware corporativo e firewall aparecem diagnosticadas. Seção de rollback documenta como voltar sem quebrar clientes antigos. Foco em engenharia de implantação, não em opinião sobre a web. Ao longo do texto há tabelas de resumo que facilitam a consulta rápida, e o fechamento indica por onde começar na prática.",dev_engineering,Profundidade de engenharia com implantação: includes de dev_engineering; ensaio geral seria web.,,,
+train-0272,"Type: link
+User title: Guia de implementação de service workers com estratégias de cache
+User description: (empty)
+URL: https://dev.to/guia-de-implementa-o-de-service-synthetic-0138
+Site: Dev.to
+Preview title: Service workers na prática: cache offline que funciona
+Preview description: Guia técnico de implementação de service workers com estratégias de cache.
+Content status: read
+Content:
+Guia de implementação de service workers com estratégias de cache claras. Compara cache-first, network-first e stale-while-revalidate por caso. Código completo do worker aparece comentado linha a linha. A seção de versionamento cobre atualização e skipWaiting com segurança. Erros de depuração em localhost são diagnosticados passo a passo. Fallback offline serve shell mínimo em HTML próprio. Escrita para quem implementa, não para quem lê sobre a web. Para os que voltarem ao material depois, os destaques de cada seção estão reunidos em um quadro único de consulta rápida no final.",dev_engineering,Implementação técnica detalhada: includes de dev_engineering; ensaio geral seria web.,,,
+train-0269,"Type: link
+User title: Estudos de atenção aplicada à aprendizagem, revisados
+User description: (empty)
+URL: https://scielo.br/estudos-de-aten-o-aplicada-aprendizagem-synthetic-0136
+Site: SciELO
+Preview title: Atenção e aprendizagem: o que a neurociência medida mostra
+Preview description: Revisão científica de estudos de atenção aplicados à aprendizagem.
+Content status: read
+Content:
+Revisão de estudos de atenção medida aplicados à aprendizagem. Paradigmas de dupla tarefa e suas medidas ocupam a primeira seção. Efeitos de notificação em tarefas contínuas são revisados com franqueza. Limitações de generalização para sala de aula são discutidas. Estudos brasileiros citados com amostra e desenho descritos. Termina com agenda de pesquisa, não com conselho. Registro científico de ponta a ponta. Há um apêndice com a linha do tempo do assunto, útil para situar cada etapa mencionada ao longo do texto em ordem cronológica.",cognitive_psychology,Ciência revisada: includes de cognitive_psychology; aplicação de estudo seria learning_study.,,,
+test-0134,"Type: note
+User title: How the browser wars reshaped the web
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+It covers the IE bundle era, the antitrust case and the Firefox opening. Chrome's rise is framed around speed, extensions and Android leverage. Edge's Chromium switch marks the consolidation of one engine. Interview bits with developers who lived the standards wars. The sidebar argues users lost when engines converged.",web,"História e cultura da web, sem técnica: includes de web.",,,
+test-0092,"Type: link
+User title: PlantaCerta: pitch de app de troca de plantas
+User description: (empty)
+URL: https://medium.com/plantacerta-pitch-de-app-de-troca-synthetic-0052
+Site: Medium
+Preview title: Ideia de app: troca de mudas entre vizinhos
+Preview description: Pitch de conceito de app para troca de mudas entre vizinhos, com teste de validação.
+Content status: read
+Content:
+A ideia nasceu de um grupo de condomínio onde mudas sobravam em corredores. O app listaria mudas disponíveis por bairro com foto e cuidado básico. Matching por espécie e luminosidade evita troca que mata a planta em uma semana. Reputação simples de quem cuida bem mantém a qualidade das trocas. Ponto aberto: se monetizar por assinatura de fertilizer kits ou ficar gratuito. O primeiro teste seria um canal de mensagem com planilha, sem código. Risco principal: liquidez fria em bairros com poucos jardins ativos. O material termina respondendo às três perguntas mais frequentes recebidas e indicando caminhos para continuar a partir dali.",app_ideas,"Conceito de produto que não existe: includes de app_ideas; é ideia, não padrão existente.",,,
+test-0051,"Type: note
+User title: Contraste e WCAG: acessibilidade que não precisa de sorte
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Ferramentas de eyedrover calculam a razão entre foreground e background reais. Cinza claro sobre branco é o erro clássico em placeholders e chips desabilitados. Estado de foco visível é requisito de teclado e não item de gosto pessoal. Contraste não se aplica só a texto: ícones essenciais e bordas de input contam. Dark mode precisa de conjunto próprio de valores, não de inversão simples.",design_ui,Acessibilidade e prática de design de interface: includes de design_ui.,,,
+test-0056,"Type: link
+User title: Galeria: dashboards de finanças pessoais em apps reais
+User description: (empty)
+URL: https://mobbin.com/galeria-dashboards-de-finan-as-pessoais-synthetic-0032
+Site: Mobbin
+Preview title: 20 dashboards financeiros para inspirar o seu próximo projeto
+Preview description: Galeria de screenshots de dashboards financeiros de apps reais, sem método, para referência visual.
+Content status: read
+Content:
+Coleção curada com vinte dashboards de finanças pessoais extraídos de apps publicados. Cada tela traz gráfico de evolução patrimonial com recorte mensal. Vários exemplos usam cartões deslizantes para alternar entre contas. As paletas alternam entre verde sobre escuro e tons neutros com um acento. Há capturas de estados vazios com ilustração leve e um botão único. Os cartões de transação exploram avatar de categoria com número compactado. Nenhuma tela tem anotação de método: é referência visual pura. O encerramento traz um checklist objetivo para verificar se o ponto principal foi entendido antes de seguir para o material seguinte.",ui_inspiration,Galeria visual sem método é ui_inspiration pelo includes; não é how-to de design_ui.,,,
+train-0210,"Type: link
+User title: A practitioner's account of recovering from burnout
+User description: (empty)
+URL: https://psychologytoday.com/a-practitioner-s-account-of-recovering-synthetic-0106
+Site: Psychology Today
+Preview title: Burnout recovery: routines that helped
+Preview description: First-person account of burnout recovery routines and boundaries.
+Content status: read
+Content:
+A first-person account of recovering from burnout without quitting the job. The routine rebuild started with protected sleep and zero caffeine after two. Work was re-scoped with the manager using a written energy budget. Movement returned as daily walks before any gym ambition. Boundaries on notifications produced the first weekend of real rest. Therapy provided structure, but the habits carried the change. Includes a relapse warning list written by the author. The piece also saves a final stretch for free-tool recommendations that cover the essentials without any additional cost.",wellbeing,"Saúde mental na prática e hábitos: includes de wellbeing; foco em rotina, não em ciência.",,,
+train-0134,"Type: link
+User title: Conceito: marketplace hiperlocal de aulas de instrumento
+User description: (empty)
+URL: https://medium.com/conceito-marketplace-hiperlocal-de-aulas-de-synthetic-0068
+Site: Medium
+Preview title: Marketplace de aulas de violão entre vizinhos: pitch
+Preview description: Pitch de marketplace hiperlocal de aulas de música com go-to-market restrito.
+Content status: read
+Content:
+O pitch conecta quem quer aprender instrumento com quem ensina no mesmo bairro. A aula primeira com desconto serviria de isca para reduzir fricção de escolha. Filtro por estilo musical importa mais que por preço nesse nicho. Take de 12 por cento só depois da segunda aula agendada. Ponto aberto: verificação de afinidade com público infantil e adolescentes. Começaria por um bairro único com vinte professores manualmente recrutados. Risco: sazonalidade de janeiro e abandono de instrumento em 90 dias. O desfecho inclui uma mini-lista de verificação em ordem de prioridade, pensada para quem tem apenas dez minutos antes de aplicar.",app_ideas,Conceito de marketplace: includes de app_ideas.,,,
+train-0109,"Type: link
+User title: Notification opt-in: a two-step pattern
+User description: (empty)
+URL: https://patterns.dev/notification-opt-in-a-two-step-synthetic-0055
+Site: Patterns.dev
+Preview title: Permission request patterns that survive
+Preview description: Documentation of the two-step notification permission pattern with variants.
+Content status: read
+Content:
+The two-step pattern separates value explanation from the OS permission dialog. Step one is in-product context; step two is the native system prompt. Deferring the prompt until a relevant action raises acceptance dramatically. The pattern defines a fallback for denial, which most apps forget. Badged soft-ask buttons make the pre-permission state legible. Anti-pattern: triggering the OS dialog on first launch cold. A decision matrix maps timing, trigger and copy variants. An update note at the end explains what changed since the first version and why each adjustment was made.",app_patterns,Padrão documentado com matriz de decisão: includes de app_patterns.,,,
+test-0176,"Type: link
+User title: The engineering ladder, explained without mystery
+User description: (empty)
+URL: https://staffeng.com/the-engineering-ladder-explained-without-mystery-synthetic-0098
+Site: Staff Eng
+Preview title: What staff engineers actually do
+Preview description: Guide to the engineering career ladder and the staff engineer role.
+Content status: read
+Content:
+A walkthrough of what changes as engineers climb past senior. Staff work is leverage: cross-team fixes written in code and documents. The ladder rewards scope and judgment, not typing speed. Three archetypes emerge: tech lead, architect and solver. Promotion evidence lives in artifacts others use after you leave. The guide maps each level to expected blast radius. Includes career stories collected from dozens of practitioners. At the end, the author recaps the main points as short bullet notes and suggests concrete next steps for putting the ideas into practice.",career_work,Progressão de carreira em engenharia: includes de career_work.,,,
+train-0264,"Type: note
+User title: Como montar seu planner de semestre
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Bloco de estudo ganha cor própria e horário morto vira revisão. Página mensal marca provas e entregas com alerta de uma semana. Espaço de registro de horas reais compara plano com realidade. Revisão semanal de quinze minutos recalibra a semana seguinte. Download do template acompanha o vídeo para imprimir.",learning_study,Organização de estudo com planner: includes de learning_study.,,,
+test-0240,"Type: note
+User title: 1,000 icons starter file: paste and go
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+A starter file with a thousand common UI icons organized by category. Every icon is a component with stroke variants ready to swap. Paste into any project and override color via styles. No lessons attached; the file is the product. Includes a search page by keyword for quick grabbing.",templates,Artefato pronto para reuso: includes de templates; ensinar a desenhar ícones seria design_ui.,,,
+train-0183,"Type: note
+User title: Linkorama: the monthly haul
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Expect three interviews, two odd tools and one beautiful archive find. Each link carries a one-liner and zero pontification. Recurring tag rounds up hypertext experiments from personal sites. Occasional video dump with subtitle-friendly picks. Pure curation, the blog equivalent of a junk drawer that sparkles. No theme, no thesis, just good links.",web,Curadoria de links: includes de web.,,,
+test-0011,"Type: note
+User title: Ancoragem: o viés que define quanto você acha que as coisas valem
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+A âncora opera mesmo quando a pessoa sabe que o valor é aleatório e irrelevante para a decisão. Judges expostos a números altos propõem penas maiores em cenários controlados de laboratório. Explicações concorrentes incluem ativação seletiva e ajuste insuficiente a partir da âncora. Em negociação salarial, quem faz a primeira oferta costuma puxar a zona de acordo para perto do próprio número. Estratégias de contrabalanço envolvem deliberar sobre argumentos contrários à âncora antes de decidir.",cognitive_psychology,"Vieses de decisão são ciência cognitiva aplicada, cobertos pelo includes de cognitive_psychology.",,,
+train-0141,"Type: link
+User title: Lista de compras por voz: ideia simples de fim de semana
+User description: (empty)
+URL: https://tabnews.com.br/lista-de-compras-por-voz-ideia-synthetic-0071
+Site: TabNews
+Preview title: Conceito: app de lista de compras 100% falado
+Preview description: Conceito de app de lista de compras por voz com reconhecimento offline.
+Content status: read
+Content:
+A ideia é uma lista de compras onde tudo se resolve falando no corredor do mercado. Reconhecimento local, sem nuvem, para funcionar no mercado com sinal ruim. Repetir o item adiciona quantidade em vez de duplicar a linha. Confirmação por vibração evita olhar a tela com a mão ocupada. Compartilhamento da lista em tempo real com quem faz as compras em dupla. Versão zero: widget de telefone com um botão de microfone. Risco: aceitação de falar em voz alta no mercado brasileiro.",app_ideas,Ideia de produto novo: includes de app_ideas.,,,
+train-0233,"Type: link
+User title: Reuniões assíncronas: como o time abandonou o daily
+User description: (empty)
+URL: https://tabnews.com.br/reuni-es-ass-ncronas-como-o-synthetic-0117
+Site: TabNews
+Preview title: Adiamos o daily: o experimento de seis meses
+Preview description: Relato de experimento substituindo reunião diária por comunicação assíncrona.
+Content status: not_read
+Content:
+(empty)",career_work,Sistema de trabalho e produtividade de time: includes de career_work.,,,
+test-0050,"Type: link
+User title: Como testar e corrigir contraste de texto e componentes
+User description: (empty)
+URL: https://medium.com/como-testar-e-corrigir-contraste-de-synthetic-0028
+Site: Medium
+Preview title: Contraste e WCAG: acessibilidade que não precisa de sorte
+Preview description: Guia de acessibilidade visual com critérios WCAG aplicados a componentes reais.
+Content status: read
+Content:
+WCAG define razões mínimas de contraste: 4.5 para texto normal e 3 para texto grande. Ferramentas de eyedrover calculam a razão entre foreground e background reais. Cinza claro sobre branco é o erro clássico em placeholders e chips desabilitados. Estado de foco visível é requisito de teclado e não item de gosto pessoal. Contraste não se aplica só a texto: ícones essenciais e bordas de input contam. Dark mode precisa de conjunto próprio de valores, não de inversão simples. O checklist final inclui estados de erro, links dentro de texto e gráficos. No fechamento, o autor resume os pontos principais em tópicos curtos e sugere os próximos passos práticos para aplicar o que foi explicado.",design_ui,Acessibilidade e prática de design de interface: includes de design_ui.,,,
+train-0085,"Type: link
+User title: Cards: compêndio visual de 50 variações
+User description: (empty)
+URL: https://youtube.com/cards-comp-ndio-visual-de-50-synthetic-0043
+Site: YouTube
+Preview title: Video-compilação: padrões visuais de cards
+Preview description: Compilação visual de variações de cards para referência rápida.
+Content status: read
+Content:
+Compêndio em vídeo com cinquenta variações de cards de interface. Cards de produto, de artigo, de perfil e de estatística em sequência rápida. É possível pausar e comparar hierarquia interna de cada variação. As sombras variam de quase invisível a elevação marcada. Alguns cards misturam mídia em proporção 16:9 com faixa de texto. Sem narração analítica: apenas a sequência de telas com música ambiente. Uso pretendido: referência rápida quando um card trava no design. O texto ainda reserva um trecho final com recomendações de ferramentas gratuitas que cobrem o essencial sem custo adicional algum.",ui_inspiration,Compêndio visual sem análise: includes de ui_inspiration.,,,
+train-0262,"Type: link
+User title: Como montar seu planner de semestre
+User description: (empty)
+URL: https://youtube.com/como-montar-seu-planner-de-semestre-synthetic-0132
+Site: YouTube
+Preview title: Planner de estudos semestral: montagem passo a passo
+Preview description: Vídeo passo a passo de montagem de planner de estudos semestral.
+Content status: read
+Content:
+Vídeo de montagem de planner semestral do zero em vinte minutos. Grade fixa de aulas entra primeiro como esqueleto da semana. Bloco de estudo ganha cor própria e horário morto vira revisão. Página mensal marca provas e entregas com alerta de uma semana. Espaço de registro de horas reais compara plano com realidade. Revisão semanal de quinze minutos recalibra a semana seguinte. Download do template acompanha o vídeo para imprimir. O desfecho inclui uma mini-lista de verificação em ordem de prioridade, pensada para quem tem apenas dez minutos antes de aplicar.",learning_study,Organização de estudo com planner: includes de learning_study.,,,
+test-0292,"Type: link
+User title: Exercise and the brain: what the research says, and my routine
+User description: (empty)
+URL: https://strongerbyscience.com/exercise-and-the-brain-what-the-synthetic-0172
+Site: Stronger by Science
+Preview title: The evidence on exercise for mood and cognition, applied
+Preview description: Evidence review of exercise for cognition plus a practical weekly routine.
+Content status: read
+Content:
+An evidence review of exercise effects on mood and cognition. The piece then translates the findings into a weekly routine. Dose-response findings are presented with their caveats. The routine respects the minimum effective doses discussed. Mechanisms like BDNF are covered at review depth. Personal adherence notes close the piece. Science review plus practical health routine. Beyond the main content, footnotes carry the cited sources and a short appendix holds the supporting material worth keeping. The ending includes an objective checklist to verify the main point was understood before moving on to the next piece of material.",wellbeing;cognitive_psychology,Cabe nas duas: ciência revisada (includes de cognitive_psychology) e rotina de saúde (includes de wellbeing).,,,
+train-0099,"Type: note
+User title: Anti-padrões de cadastro: o que espanta usuário novo
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Validação em tempo real com mensagem específica reduz abandono documentado. Login social cobre a maioria dos casos, mas precisa de fallback de e-mail. Anti-padrão: obrigação de verificação de e-mail antes de qualquer uso. Progressive disclosure divide o cadastro em momentos de necessidade real. Teardowns citados comparam fluxos antes e depois da correção.",app_patterns,Anti-padrões de interação documentados: includes de app_patterns.,,,
+test-0235,"Type: link
+User title: UI kit de dashboard pronto para duplicar
+User description: (empty)
+URL: https://figma.com/ui-kit-de-dashboard-pronto-para-synthetic-0135
+Site: Figma Community
+Preview title: Kit de dashboard: 60 componentes prontos
+Preview description: Kit de componentes de dashboard pronto para duplicar e usar.
+Content status: not_read
+Content:
+(empty)",templates,Artefato pronto para reuso: includes de templates; tutorial de criação seria design_ui.,,,
+test-0136,"Type: link
+User title: Newsletter: os melhores links da semana da web
+User description: (empty)
+URL: https://substack.com/newsletter-os-melhores-links-da-semana-synthetic-0076
+Site: Substack
+Preview title: Digest da semana: 12 links que valem seu café
+Preview description: Newsletter semanal de curadoria de links sobre web e cultura digital.
+Content status: read
+Content:
+Digest semanal com doze links curtidos nas últimas sete dias. Uma nota de duas frases explica por que cada link vale o clique. Temas variam entre plataforma, cultura de internet e curiosidades. O item destacado da semana ganha um parágrafo mais longo. Seção fixa de ferramenta da semana com um app web gratuito. Arquivo completo organizado por edição numerada. Sem análise técnica: é curadoria de leitura mesmo. Quem acompanha até o final encontra um pequeno glossário dos termos usados e indicações de como medir o próprio progresso.",web,Digest de links: incluído por web (curadoria sem profundidade de engenharia).,,,
+train-0234,"Type: link
+User title: Adiamos o daily: o experimento de seis meses
+User description: (empty)
+URL: https://tabnews.com.br/adiamos-o-daily-o-experimento-de-synthetic-0118
+Site: TabNews
+Preview title: Reuniões assíncronas: como o time abandonou o daily
+Preview description: Relato de experimento substituindo reunião diária por comunicação assíncrona.
+Content status: read
+Content:
+Experimento de seis meses substituindo a diária por escrita estruturada. Cada pessoa posta bloqueio e plano no canal até meio-dia. Reunião viva ficou reservada para desenrolo de bloqueio real. Fuso horário diferente deixou de ser dor de agenda. Custo escondido: disciplina de escrita que exige treino. Métrica do time: tempo até desbloqueio caiu com o canal aberto. Aprendizado: assíncrono não é ausência, é presença escrita. Uma nota de atualização no fim do material explica o que mudou desde a primeira versão e por que cada ajuste foi feito.",career_work,Sistema de trabalho e produtividade de time: includes de career_work.,,,
+test-0105,"Type: note
+User title: Notícias por bairro: uma ideia de app hiperlocal
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+A ideia é um feed de ocorrências por raio de um quilômetro da casa. Fontes seriam prefeitura, grupos de mensagens e reportes dos próprios moradores. Cada reporte levaria categoria, foto opcional e validade temporal. Evitar viração de pânico exige regra dura de expiração em 48 horas. Receita pensada: vitrine de comércio local, sem anúncio de rede. Versão zero seria um boletim diário por e-mail com três notinhas.",app_ideas,Conceito de produto: includes de app_ideas.,,,
+test-0071,"Type: link
+User title: Single-page sites: this week's gallery
+User description: (empty)
+URL: https://onepagelove.com/single-page-sites-this-week-s-synthetic-0039
+Site: One Page Love
+Preview title: One page inspiration roundup
+Preview description: Weekly gallery of single-page website screenshots as a visual swipe file.
+Content status: read
+Content:
+Weekly roundup of handpicked single-page websites across industries. This edition leans into oversized type and scroll-driven reveals. Each entry gets a full-page screenshot and a short tagline, nothing more. Categories span portfolios, event pages and product launches. Useful swipe file when a landing page brief lands with zero direction. Archive links keep ten years of previous galleries browsable. No teardown or design commentary: pure visual reference. Every section carries a one-line recap, and the final paragraphs stitch them together into a two-paragraph conclusion.",ui_inspiration,Galeria sem análise: includes de ui_inspiration.,,,
+test-0192,"Type: note
+User title: Anotações Cornell: o template e o ritual de revisão
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+O método Cornell divide a página em coluna de pistas, área de notas e resumo. Durante a aula, anotações livres ocupam a área maior. Horas depois, a coluna lateral é preenchida com perguntas-chave. O resumo de cinco linhas no rodapé força síntese do conteúdo. A revisão cobre a área de notas e responde as pistas da lateral. O template funciona em caderno e em aplicativo de anotação.",learning_study,Método de anotação e estudo: includes de learning_study.,,,
+train-0053,"Type: link
+User title: Dark theme palettes: tone mapping that works
+User description: (empty)
+URL: https://m3.material.io/dark-theme-palettes-tone-mapping-that-synthetic-0027
+Site: Material 3
+Preview title: How Material 3 builds dark themes from color roles
+Preview description: Reference method article on constructing dark theme palettes with color roles.
+Content status: not_read
+Content:
+(empty)",design_ui,Método de paleta e design de interface: includes de design_ui.,,,
+train-0360,"Type: note
+User title: Exercício e humor: reportagem com rotina prática
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Reportagem revisando estudos sobre exercício e regulação do humor. Entrevistas com pesquisadores citam meta-análises recentes. A reportagem inclui rotina prática sugerida por educador físico. A rotina respeita as doses mínimas discutidas na ciência. Limitações dos estudos aparecem declaradas. Não é autoajuda: cada afirmação tem fonte.",wellbeing;cognitive_psychology,Cabe nas duas: revisão científica (includes de cognitive_psychology) e rotina de saúde (includes de wellbeing).,,,
+test-0311,"Type: link
+User title: Copy-paste form blocks with composition docs
+User description: (empty)
+URL: https://ui.shadcn.com/copy-paste-form-blocks-with-composition-synthetic-0185
+Site: shadcn/ui
+Preview title: Form blocks: copy them and learn the composition rules
+Preview description: Copy-paste form blocks with composition documentation.
+Content status: read
+Content:
+Copy-paste form blocks shipped as code you own after pasting. Every block carries composition documentation: spacing, states, a11y. The docs explain why each variant exists and when to use it. Blocks are assembled from primitives with design decisions written down. Paste into a project and the tokens wire up automatically. Reference implementations double as teaching material. Ready-made artifact and method documentation together. The closing section lists common mistakes worth rereading, each paired with the recommended fix for the situation described.",templates;design_ui,Cabe nas duas: blocos prontos para colar (includes de templates) e documentação de composição de UI (includes de design_ui).,,,
+train-0117,"Type: link
+User title: Undo and toasts: the feedback pattern pair
+User description: (empty)
+URL: https://uxdesign.cc/undo-and-toasts-the-feedback-pattern-synthetic-0059
+Site: UX Collective
+Preview title: Designing reversible actions with transient feedback
+Preview description: Pattern documentation for undo actions paired with toast feedback.
+Content status: read
+Content:
+Undo shifts confirmation cost from before to after the action. Toast with embedded undo keeps the flow uninterrupted for destructive edits. Timeout discipline matters: five seconds is short for reading plus clicking. Snackbar pattern variants pin the action instead of auto-dismissing. Anti-pattern: confirm dialog for every trivial deletion. Undo stacks vary by domain, and editors need multi-level history. The pair is documented with timing numbers and accessibility notes. A guided-study section ships with the material, suggesting practice pauses after each block and logging what actually worked.",app_patterns,Padrão de feedback e reversibilidade documentado: includes de app_patterns.,,,
+train-0345,"Type: link
+User title: Web design gallery: this month's one-page picks
+User description: (empty)
+URL: https://onepagelove.com/web-design-gallery-this-month-s-synthetic-0185
+Site: One Page Love
+Preview title: Monthly one-page web gallery roundup
+Preview description: Monthly gallery of one-page websites as visual reference.
+Content status: read
+Content:
+A monthly gallery of one-page websites picked for visual craft. Entries span portfolios, product launches and event pages. Each pick is a full screenshot with a one-line vibe note. The roundup doubles as web-reading: each entry links out. Browsing tip filters by aesthetic family. No teardown, no code, pure visual curation. Web gallery for the swipe file. The material closes with a frank note about the limitations of what was presented and what remains open in the field. A resources section at the end lists the cited material grouped by subject, making it easy to jump back to a point of interest.",ui_inspiration;web,Cabe nas duas: galeria visual da web (includes de ui_inspiration) e curadoria de leitura web (includes de web).,,,
+train-0029,"Type: link
+User title: Tracing distribuído: instrumentar até achar o culpado
+User description: (empty)
+URL: https://dev.to/tracing-distribu-do-instrumentar-at-achar-synthetic-0015
+Site: Dev.to
+Preview title: Observabilidade com traces de ponta a ponta
+Preview description: Artigo sobre tracing distribuído e observabilidade com OpenTelemetry.
+Content status: read
+Content:
+Um trace reconstitui o caminho de um request entre serviços com timestamps por span. Propagação de contexto via headers padronizados é o que costuma faltar na instrumentação. Sampling adaptativo guarda 100% dos erros e uma fração dos sucessos rápidos. Span attributes devem carregar dimensões de negócio, não só nomes de função. Histogramas de latência por serviço revelam caudas que a média esconde. OpenTelemetry unifica instrumentação e exportação sem vendor lock-in. O ganho real é causal: ver qual dependência específica atrasou qual usuário.",dev_engineering,Infra e prática de engenharia: includes de dev_engineering.,,,
+test-0173,"Type: note
+User title: Negociação salarial: o roteiro que usei nas últimas duas trocas
+User description: (empty)
+URL: (empty)
+Site: (empty)
+Preview title: (empty)
+Preview description: (empty)
+Content status: note
+Content:
+Roteiro de negociação salarial testado em duas trocas de emprego. Faixa pesquisada em relatório salarial antes de qualquer conversa. Nunca dar número primeiro quando a faixa está publicada na vaga. Ancorar em valor de mercado e entrega, não em necessidade pessoal. Silêncio depois do contador é a ferramenta mais barata da negociação.",career_work,Crescimento de carreira: includes de career_work.,,,
+train-0254,"Type: link
+User title: Intercalado ou em blocos: o guia prático
+User description: (empty)
+URL: https://medium.com/intercalado-ou-em-blocos-o-guia-synthetic-0128
+Site: Medium
+Preview title: Estudo intercalado vs blocos: qual funciona melhor
+Preview description: Guia comparando estudo intercalado e em blocos com grade prática.
+Content status: read
+Content:
+Estudo em blocos repete o mesmo assunto até dominar e dá sensação de fluidez. Estudo intercalado alterna assuntos e melhora discriminação de longo prazo. A sensação de dificuldade maior do intercalado é o sinal de que funciona. Prática: alternar três matérias na mesma sessão em rodadas curtas. Intercalado brilha em reconhecer qual método usar em cada problema. Blocos ainda funcionam para primeira exposição ao conteúdo novo. O guia traz uma grade semanal misturando os dois formatos. O material fecha com uma conversa franca sobre limitações do que foi apresentado e sobre o que ainda permanece em aberto no tema.",learning_study,Método de estudo comparado: includes de learning_study.,,,
+test-0099,"Type: link
+User title: Side project idea: habit bingo
+User description: (empty)
+URL: https://indiehackers.com/side-project-idea-habit-bingo-synthetic-0055
+Site: Indie Hackers
+Preview title: Habit bingo: a weekend project pitch
+Preview description: Weekend project pitch for a habit bingo app with anti-streak framing.
+Content status: read
+Content:
+The idea swaps habit streaks for a bingo card: five in a row wins the week. Streaks punish one missed day; bingo forgives it and keeps motivation alive. Card generation would reshuffle habits every Monday to avoid routine blindness. Monetization sketch: one paid theme pack, no subscription nonsense. First version is a static site that prints the card on paper. Open question: whether social proof beats the printed sheet. Main risk is novelty wearing off after three cards. The material ends by answering the three questions readers ask the most and pointing at paths for continuing from there.",app_ideas,Product concept and hypothesis: includes de app_ideas.,,,
+train-0205,"Type: link
+User title: Alongamento para quem senta o dia todo
+User description: (empty)
+URL: https://youtube.com/alongamento-para-quem-senta-o-dia-synthetic-0103
+Site: YouTube
+Preview title: Sequência de 10 minutos para home office
+Preview description: Vídeo com sequência de alongamentos de dez minutos para quem trabalha sentado.
+Content status: read
+Content:
+Sequência guiada de dez minutos para quem senta muitas horas. Foco em cadeia posterior: panturrilha, posterior e glúteo. Abertura de peitoral na porta compensa a postura para frente. Cada posição segura trinta segundos com respiração lenta. Duas progressões mostradas para quem ganha amplitude. Nenhuma sessão substitui avaliação de dor persistente. O vídeo sugere ancorar a sessão ao fim do expediente. Ao final, existe uma seção de recursos citados com links organizados por assunto, facilitando voltar direto ao ponto de interesse.",wellbeing,Exercício e cuidado físico: includes de wellbeing.,,,

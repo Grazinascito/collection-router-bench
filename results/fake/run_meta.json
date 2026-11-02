@@ -1,0 +1,14 @@
+{
+  "run_id": "fake",
+  "started_at": "2026-11-02T00:38:47+00:00",
+  "reps": 3,
+  "environment": {
+    "gpu": null,
+    "host": "local"
+  },
+  "smoke_attempts": [],
+  "model_id": "fake/model",
+  "server_id": "fake-server",
+  "arm_b_impl": "systemone",
+  "finished_at": "2026-11-02T00:38:47+00:00"
+}

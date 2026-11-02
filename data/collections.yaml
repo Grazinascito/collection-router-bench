@@ -1,0 +1,96 @@
+version: 1
+collections:
+  - id: cognitive_psychology
+    name: Cognitive psychology
+    includes: >
+      Research and explanations about how the mind works: attention, memory,
+      motivation, perception, decision making and cognitive biases, grounded in
+      experiments or established theory. Lab studies, literature reviews and
+      textbook-style explainers of human cognition belong here.
+    excludes: >
+      Practical study techniques or self-improvement routines without cognitive
+      science belong in Learning / Study or Wellbeing, not here.
+  - id: dev_engineering
+    name: Dev / Engineering
+    includes: >
+      Building software: programming languages, architecture, infrastructure,
+      testing, performance, databases, dev tooling and engineering practice.
+      Tutorials, deep dives and post-mortems about how systems are built belong here.
+    excludes: >
+      Articles about the web in general or link digests without engineering depth
+      belong in Web; visual interface craft belongs in Design / UI.
+  - id: design_ui
+    name: Design / UI
+    includes: >
+      The practice of designing interfaces: layout, typography, components,
+      design systems, accessibility, UX process and design tools such as Figma.
+      How-to content and method discussions belong here.
+    excludes: >
+      Galleries and screenshots kept as visual reference belong in UI Inspiration;
+      ready-made kits and boilerplates belong in Templates.
+  - id: ui_inspiration
+    name: UI Inspiration
+    includes: >
+      Visual reference material: showcases, galleries, screenshots of apps and
+      websites, moodboards and case studies kept to look at, not to follow as
+      a method.
+    excludes: >
+      Step-by-step technique and design method belong in Design / UI; documented
+      interaction solutions belong in App Patterns.
+  - id: app_patterns
+    name: App Patterns
+    includes: >
+      Documented recurring solutions in app design and interaction: navigation
+      patterns, onboarding flows, empty states, search behavior, anti-patterns
+      and pattern libraries, described as solutions rather than as visual reference.
+    excludes: >
+      Untested product concepts and feature ideas belong in App Ideas; plain
+      screenshots without analysis belong in UI Inspiration.
+  - id: app_ideas
+    name: App Ideas
+    includes: >
+      Product concepts and hypotheses: startup ideas, feature ideas, "what if an
+      app did X" notes, market observations and side-project pitches, including
+      ideas that do not exist yet.
+    excludes: >
+      Descriptions of patterns that already exist in production apps belong in
+      App Patterns.
+  - id: templates
+    name: Templates
+    includes: >
+      Ready-to-use artifacts the user fills in or reuses: UI kits, Notion and
+      document templates, code boilerplates, checklists and starter files.
+    excludes: >
+      Tutorials teaching how to design or build belong in Design / UI or
+      Dev / Engineering.
+  - id: web
+    name: Web
+    includes: >
+      General reading about the web and internet culture: essays, news, opinions,
+      link digests, browsers and platforms, kept for awareness rather than for
+      engineering practice.
+    excludes: >
+      Deep technical engineering content belongs in Dev / Engineering.
+  - id: wellbeing
+    name: Wellbeing
+    includes: >
+      Physical and mental health in practice: sleep, exercise, nutrition, stress
+      management, habits and routines for feeling better day to day.
+    excludes: >
+      Studies of cognition and behavior as science belong in Cognitive psychology;
+      study techniques belong in Learning / Study.
+  - id: career_work
+    name: Career / Work
+    includes: >
+      Work life: career growth, job search, management, leadership, hiring,
+      teamwork and productivity systems used at work.
+    excludes: >
+      Personal learning methods belong in Learning / Study.
+  - id: learning_study
+    name: Learning / Study
+    includes: >
+      How to learn and study: spaced repetition, active recall, note-taking
+      systems, courses, educational explainers and skill-acquisition methods.
+    excludes: >
+      Laboratory cognitive science belongs in Cognitive psychology; productivity
+      systems for work belong in Career / Work.

@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "collection-router-bench"
+version = "0.1.0"
+description = "Typed decisions (vLLM /v1/systemone logprobs) vs JSON generation vs small classifier for multi-label block routing"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+license = { text = "MIT" }
+dependencies = [
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    "httpx>=0.27",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=15.0",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "tqdm>=4.66",
+    "huggingface_hub>=0.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "nbformat>=5.10"]
+train = ["transformers>=4.44", "datasets>=2.19", "accelerate>=0.30"]
+gpu = ["vllm==0.32.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# content banks hold long PT/EN sentences as single-line strings
+"scripts/banks_*.py" = ["E501"]
+"scripts/data_banks.py" = ["E501"]
+# scripts bootstrap sys.path before importing crb; the notebook imports per cell
+"scripts/*.py" = ["E402"]
+"notebooks/*.ipynb" = ["E402"]
+"scripts/make_notebook.py" = ["E501"]

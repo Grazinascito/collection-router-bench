@@ -1,0 +1,167 @@
+{
+  "run_id": "fake",
+  "created_at": "2026-11-02T00:38:49+00:00",
+  "model_id": "fake/model",
+  "model_sha": null,
+  "arm_b_impl": "systemone",
+  "server_id": "fake-server",
+  "reps": 3,
+  "n_test": 360,
+  "environment": {
+    "gpu": null,
+    "host": "local"
+  },
+  "arms": {
+    "A": {
+      "quality": {
+        "n": 10,
+        "micro_f1": 1.0,
+        "macro_f1": 0.0833,
+        "exact_match": 1.0,
+        "format_error_rate": 0.0,
+        "error_rate": 0.0,
+        "mean_label_mass": null
+      },
+      "latency": {
+        "n": 10,
+        "p50_ms": 0.159,
+        "p95_ms": 0.167
+      },
+      "stability": {
+        "same_set_rate": 1.0,
+        "mean_max_p_yes_swing": null
+      },
+      "tokens": {
+        "prompt_tokens_mean": 900.0,
+        "completion_tokens_mean": 24.0
+      },
+      "slices": {
+        "collection:cognitive_psychology": {
+          "n": 10,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        },
+        "content_status:note": {
+          "n": 4,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        },
+        "content_status:read": {
+          "n": 6,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        },
+        "difficulty:easy": {
+          "n": 10,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        },
+        "kind:link": {
+          "n": 6,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        },
+        "kind:note": {
+          "n": 4,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        },
+        "lang:pt": {
+          "n": 10,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        }
+      }
+    },
+    "B": {
+      "quality": {
+        "n": 10,
+        "micro_f1": 0.9524,
+        "macro_f1": 0.0833,
+        "exact_match": 0.9,
+        "format_error_rate": 0.0,
+        "error_rate": 0.0,
+        "mean_label_mass": 0.9
+      },
+      "latency": {
+        "n": 10,
+        "p50_ms": 0.235,
+        "p95_ms": 0.24
+      },
+      "stability": {
+        "same_set_rate": 1.0,
+        "mean_max_p_yes_swing": 0.0
+      },
+      "tokens": {
+        "prompt_tokens_mean": 800.0,
+        "completion_tokens_mean": 11.0
+      },
+      "slices": {
+        "collection:cognitive_psychology": {
+          "n": 10,
+          "micro_f1": 0.9524,
+          "macro_f1": 0.0833
+        },
+        "content_status:note": {
+          "n": 4,
+          "micro_f1": 0.8889,
+          "macro_f1": 0.0833
+        },
+        "content_status:read": {
+          "n": 6,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        },
+        "difficulty:easy": {
+          "n": 10,
+          "micro_f1": 0.9524,
+          "macro_f1": 0.0833
+        },
+        "kind:link": {
+          "n": 6,
+          "micro_f1": 1.0,
+          "macro_f1": 0.0833
+        },
+        "kind:note": {
+          "n": 4,
+          "micro_f1": 0.8889,
+          "macro_f1": 0.0833
+        },
+        "lang:pt": {
+          "n": 10,
+          "micro_f1": 0.9524,
+          "macro_f1": 0.0833
+        }
+      }
+    }
+  },
+  "comparison": {
+    "n_resamples": 1000,
+    "seed": 42,
+    "d_micro_f1": -0.0476,
+    "d_micro_f1_ci95": [
+      -0.1111,
+      0.0
+    ],
+    "d_macro_f1": 0.0,
+    "d_macro_f1_ci95": [
+      0.0,
+      0.0
+    ],
+    "d_exact_match": -0.1,
+    "d_exact_match_ci95": [
+      -0.25,
+      0.0
+    ],
+    "p50_ratio_a_over_b": 0.7311,
+    "p50_ratio_a_over_b_ci95": [
+      0.6228,
+      0.7794
+    ]
+  },
+  "figures": [
+    "f1_vs_latency.png",
+    "latency_box.png",
+    "per_collection_f1.png"
+  ]
+}
