@@ -134,7 +134,14 @@ else:
          "-e", ".[gpu,train]"],
         check=True,
     )
-subprocess.run(["vllm", "download-kernels"], check=True)
+for attempt in range(1, 4):  # retry: kernel CDN can be as flaky as PyPI
+    proc = subprocess.run(["vllm", "download-kernels"], capture_output=True, text=True)
+    if proc.returncode == 0:
+        break
+    print(f"kernels attempt {attempt}/3 failed:\\n{proc.stderr[-1500:]}")
+    time.sleep(10)
+else:
+    raise RuntimeError(f"vllm download-kernels failed 3 times: {proc.stderr.strip()[-1500:]}")
 
 import torch
 import transformers
