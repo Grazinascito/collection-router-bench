@@ -134,6 +134,24 @@ else:
          "-e", ".[gpu,train]"],
         check=True,
     )
+import torch
+
+# Colab preinstalls torchaudio built for a different CUDA than the torch
+# installed above; vllm serve crashes at import until both match
+_ta_ver = torch.__version__.split("+")[0]
+proc = subprocess.run(
+    ["uv", "pip", "install", "--system", f"torchaudio=={_ta_ver}", "--torch-backend=auto"],
+    capture_output=True, text=True,
+)
+if proc.returncode != 0:
+    print(f"torchaudio align via uv failed:\\n{proc.stderr[-800:]}")
+    _cuda_tag = "cu" + torch.version.cuda.replace(".", "")
+    subprocess.run(
+        [sys.executable, "-m", "pip", "install", "--force-reinstall", "--no-deps",
+         f"torchaudio=={_ta_ver}",
+         "--index-url", f"https://download.pytorch.org/whl/{_cuda_tag}"],
+        check=True,
+    )
 for attempt in range(1, 4):  # retry: kernel CDN can be as flaky as PyPI
     proc = subprocess.run(["vllm", "download-kernels"], capture_output=True, text=True)
     if proc.returncode == 0:
@@ -144,12 +162,13 @@ else:
     raise RuntimeError(f"vllm download-kernels failed 3 times: {proc.stderr.strip()[-1500:]}")
 
 import torch
+import torchaudio
 import transformers
 import vllm
 
 print(
-    "torch", torch.__version__, "| vllm", vllm.__version__,
-    "| transformers", transformers.__version__,
+    "torch", torch.__version__, "| torchaudio", torchaudio.__version__,
+    "| vllm", vllm.__version__, "| transformers", transformers.__version__,
 )
 assert vllm.__version__ == VLLM_VERSION"""
     ),
@@ -194,8 +213,20 @@ async def _smoke():
     )
 
 
-CHOSEN_MODEL, ARM_B_IMPL = asyncio.run(_smoke())
-run_meta.update(model_id=CHOSEN_MODEL, model_sha=model_sha(CHOSEN_MODEL), arm_b_impl=ARM_B_IMPL)"""
+try:
+    CHOSEN_MODEL, ARM_B_IMPL = asyncio.run(_smoke())
+    run_meta.update(model_id=CHOSEN_MODEL, model_sha=model_sha(CHOSEN_MODEL), arm_b_impl=ARM_B_IMPL)
+except (RuntimeError, AssertionError) as e:
+    # surface the vLLM server log: the smoke fails inside a subprocess and
+    # its traceback is otherwise buried in server.log
+    print(f"An error occurred: {e}")
+    log_file = RESULTS_PATH / "server.log"
+    if log_file.exists():
+        print("--- vLLM Server Log Output (last 4000 chars) ---")
+        print(log_file.read_text()[-4000:])
+    else:
+        print(f"Could not find log file at {log_file}")
+    raise"""
     ),
     code(
         """import asyncio
