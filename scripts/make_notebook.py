@@ -90,6 +90,9 @@ import subprocess
 import time
 
 REPO_DIR = "/content/collection-router-bench"
+# a previous Run All may have left the kernel INSIDE REPO_DIR (os.chdir
+# survives page reloads): step out before rmtree deletes it
+os.chdir("/content")
 for attempt in range(1, 4):  # retry: GitHub sometimes refuses Colab IPs
     # Colab pre-clones the repo; a previous Run All may have left it too
     shutil.rmtree(REPO_DIR, ignore_errors=True)
