@@ -84,29 +84,58 @@ else:
     print("HF_TOKEN missing; continuing without publishing")"""
     ),
     code(
-        """import subprocess
+        """import os
+import shutil
+import subprocess
+import time
 
 REPO_DIR = "/content/collection-router-bench"
-subprocess.run(["git", "clone", "--depth", "1", "--branch", REPO_REF, REPO_URL, REPO_DIR], check=True)
+for attempt in range(1, 4):  # retry: GitHub sometimes refuses Colab IPs
+    # Colab pre-clones the repo; a previous Run All may have left it too
+    shutil.rmtree(REPO_DIR, ignore_errors=True)
+    proc = subprocess.run(
+        ["git", "clone", "--depth", "1", "--branch", REPO_REF, REPO_URL, REPO_DIR],
+        capture_output=True, text=True,
+    )
+    if proc.returncode == 0:
+        break
+    print(f"clone attempt {attempt}/3 failed:\\n{proc.stderr}")
+    time.sleep(5)
+else:
+    raise RuntimeError(f"git clone failed 3 times: {proc.stderr.strip()}")
 COMMIT = subprocess.run(
     ["git", "-C", REPO_DIR, "rev-parse", "HEAD"], capture_output=True, text=True, check=True
 ).stdout.strip()
-print("commit:", COMMIT)"""
+os.chdir(REPO_DIR)  # every later cell uses paths relative to the repo ("src", "data", "results")
+print("commit:", COMMIT, "| cwd:", os.getcwd())"""
     ),
     code(
         """import subprocess
+import time
 
 subprocess.run(["pip", "install", "-q", "uv"], check=True)
-subprocess.run(
-    ["uv", "pip", "install", "--system", "-e", ".[gpu,train]", "--torch-backend=auto"], check=True
-)
+for attempt in range(1, 4):  # retry: Colab's link to PyPI times out at times
+    proc = subprocess.run(
+        ["uv", "pip", "install", "--system", "-e", ".[gpu,train]", "--torch-backend=auto"],
+        capture_output=True, text=True,
+    )
+    if proc.returncode == 0:
+        print(proc.stdout[-300:])
+        break
+    print(f"install attempt {attempt}/3 failed:\\n{proc.stderr[-2000:]}")
+    time.sleep(10)
+else:
+    raise RuntimeError(f"uv install failed 3 times: {proc.stderr.strip()[-2000:]}")
 subprocess.run(["vllm", "download-kernels"], check=True)
 
 import torch
 import transformers
 import vllm
 
-print("torch", torch.__version__, "| vllm", vllm.__version__, "| transformers", transformers.__version__)
+print(
+    "torch", torch.__version__, "| vllm", vllm.__version__,
+    "| transformers", transformers.__version__,
+)
 assert vllm.__version__ == VLLM_VERSION"""
     ),
     code(
@@ -246,8 +275,9 @@ import sys
 
 subprocess.run([sys.executable, "scripts/make_report.py", "--run-id", RUN_ID], check=True)
 
-from IPython.display import Image, Markdown
 from pathlib import Path
+
+from IPython.display import Image, Markdown
 
 display(Markdown(Path(f"results/{RUN_ID}/report.md").read_text()))
 display(Image(filename=f"results/{RUN_ID}/figures/f1_vs_latency.png"))"""
