@@ -23,10 +23,11 @@ def load_summary(run_id: str | None) -> dict | None:
     if local and local.exists():
         return json.loads(local.read_text())
     try:  # fall back to the published dataset
-        from huggingface_hub import hf_hub_download
+        from huggingface_hub import HfApi, hf_hub_download
 
+        user = HfApi().whoami()["name"]
         path = hf_hub_download(
-            "HF_PLACEHOLDER/collection-router-bench",
+            f"{user}/collection-router-bench",
             "results/latest/summary.json",
             repo_type="dataset",
         )
@@ -111,19 +112,22 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--run-id", default=None)
     ap.add_argument("--readme", default=str(REPO / "README.md"))
-    ap.add_argument("--hf-user", default=None, help="replace the HF_USER placeholder (Mac runs have no token)")
+    ap.add_argument(
+        "--hf-user", default=None, help="replace the HF_USER placeholder (no local token)"
+    )
     args = ap.parse_args()
 
     readme_path = Path(args.readme)
     text = readme_path.read_text(encoding="utf-8")
 
-    user = None
-    try:
-        from huggingface_hub import HfApi
+    user = args.hf_user
+    if not user:
+        try:
+            from huggingface_hub import HfApi
 
-        user = HfApi.whoami()["name"]
-    except Exception:  # noqa: BLE001 - token may be absent on the Mac
-        user = None
+            user = HfApi().whoami()["name"]
+        except Exception:  # noqa: BLE001 - token may be absent on the Mac
+            user = None
 
     summary = load_summary(args.run_id)
     if summary:
