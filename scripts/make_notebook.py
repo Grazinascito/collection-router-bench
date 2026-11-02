@@ -111,21 +111,26 @@ print("commit:", COMMIT, "| cwd:", os.getcwd())"""
     ),
     code(
         """import subprocess
+import sys
 import time
 
 subprocess.run(["pip", "install", "-q", "uv"], check=True)
+UV_CMD = ["uv", "pip", "install", "--system", "-e", ".[gpu,train]", "--torch-backend=auto"]
 for attempt in range(1, 4):  # retry: Colab's link to PyPI times out at times
-    proc = subprocess.run(
-        ["uv", "pip", "install", "--system", "-e", ".[gpu,train]", "--torch-backend=auto"],
-        capture_output=True, text=True,
-    )
+    proc = subprocess.run(UV_CMD, capture_output=True, text=True)
     if proc.returncode == 0:
         print(proc.stdout[-300:])
         break
-    print(f"install attempt {attempt}/3 failed:\\n{proc.stderr[-2000:]}")
+    print(f"uv attempt {attempt}/3 failed:\\n{proc.stderr[-1500:]}")
     time.sleep(10)
 else:
-    raise RuntimeError(f"uv install failed 3 times: {proc.stderr.strip()[-2000:]}")
+    # some Colab VMs break uv's route to PyPI while pip still works
+    print("falling back to plain pip (slower, same packages)")
+    subprocess.run(
+        [sys.executable, "-m", "pip", "install", "--timeout", "60", "--retries", "10",
+         "-e", ".[gpu,train]"],
+        check=True,
+    )
 subprocess.run(["vllm", "download-kernels"], check=True)
 
 import torch
